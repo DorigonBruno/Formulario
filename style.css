@@ -15,6 +15,7 @@
 
 form {
   max-width: 900px;
+  padding: 20px;
 }
 
 input,
@@ -47,13 +48,14 @@ label {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 .message-error {
   margin-bottom: 16px;
   color: #e21111;
   font-family: "inter", sans-serif;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 button {
@@ -68,4 +70,28 @@ button {
 
 button:hover {
   background: #1d3d7d;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.4rem;
+    margin-bottom: 32px;
+  }
+  label {
+    font-size: .875rem;
+  }
+input,
+button {
+  height: 40px;
+  margin-bottom: 4px;
+  padding: 10px;
+  font-size: .75rem;
+}
 }
